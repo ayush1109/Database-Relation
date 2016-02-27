@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="#68000000"
+    android:padding="5dip"
+    >
+
+    <!--  ListRow Left sied Thumbnail image -->
+    <ImageView
+            android:id="@+id/image"
+            android:layout_width="80dip"
+            android:layout_height="100dip"
+            android:src="@drawable/mom"/>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="90dp"
+        android:orientation="vertical" >
+
+
+    <TextView
+        android:id="@+id/NameofPerson"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/picture"
+        android:layout_toRightOf="@+id/picture"
+        android:text="Name Of Person"
+        android:textColor="#ffffff"
+        android:typeface="sans"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_marginLeft="10dp" />
+    <TextView
+        android:id="@+id/Relation"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/NameofPerson"
+        android:textColor="#e4d1d1"
+        android:textSize="15dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/picture"
+        android:text="Relation Of Person"
+        android:layout_marginLeft="15dp" />
+    </LinearLayout>
+</LinearLayout>
